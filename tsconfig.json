@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      /* Language and Environment */
+      "target": "ES2022",                          // Modern JavaScript output
+      "lib": ["ES2022", "DOM"],                    // Include modern JS and browser features
+      "module": "ES2022",                          // ESNext module system
+      "moduleResolution": "Node",                  // Resolve modules like Node.js
+      "types": ["node"],                          // Include Node.js types
+  
+      /* Output Settings */
+      "outDir": "./dist",                         // Output directory for compiled files
+      "rootDir": "./src",                         // Root directory for source files
+      "declaration": true,                        // Generate declaration files
+      "sourceMap": true,                          // Generate source maps for debugging
+  
+      /* Strict Type-Checking Options */
+      "strict": true,                             // Enable all strict type-checking options
+      "noImplicitAny": true,                      // Raise errors for variables with any type
+      "strictNullChecks": true,                   // Strictly check null and undefined
+      "strictFunctionTypes": true,                // Ensure function types are compatible
+      "strictBindCallApply": true,                // Check the arguments of bind, call, and apply
+      "noImplicitThis": true,                     // Disallow this with an implicit any type
+      "alwaysStrict": true,                       // Ensure use strict is always emitted
+  
+      /* Code Quality and Safety */
+      "noImplicitReturns": true,                  // Ensure all code paths return a value
+      "noFallthroughCasesInSwitch": true,         // Prevent fallthrough in switch cases
+      "esModuleInterop": true,                    // Enable compatibility with CommonJS modules
+      "forceConsistentCasingInFileNames": true,   // Enforce consistent file naming casing
+  
+      /* Advanced Options */
+      "allowSyntheticDefaultImports": true,       // Allow default imports for modules without them
+      "resolveJsonModule": true,                  // Enable importing .json files
+      "isolatedModules": true,                    // Ensure each file can be compiled in isolation
+      "skipLibCheck": true,                       // Skip type checks for declaration files
+      "useDefineForClassFields": true             // Emit define behavior for class fields
+    },
+    "include": ["src"],                           // Include the src folder for compilation
+    "exclude": ["node_modules", "dist"]           // Exclude unnecessary folders
+  }

@@ -1,0 +1,30 @@
+{
+  "name": "solwasher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "tsup && node dist/main.js",
+    "mix": "tsup && node dist/wallets/solMix.js",
+    "check": "tsup && node dist/wallets/checkBalances.js",
+    "recover": "tsup && node dist/wallets/recoverSol.js",
+    "keygen": "tsup && node dist/wallets/walletsCreate.js",
+    "transfertest": "tsup && node dist/wallets/transferTest.js",
+    "dev": "tsup --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7"
+  }
+}
